@@ -1,0 +1,12 @@
+[project]
+name = "my-openenv"
+version = "0.1.0"
+dependencies = [
+    "openenv-core>=0.2.0",
+    "fastapi",
+    "uvicorn",
+    "openai",
+    "pydantic",
+]
+[project.scripts]
+server = "inference:app"
