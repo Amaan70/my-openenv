@@ -1,6 +1,6 @@
 ---
 title: "My OpenEnv Environment"
-emoji: ??
+emoji: rocket
 colorFrom: purple
 colorTo: gray
 sdk: docker
