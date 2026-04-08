@@ -9,6 +9,7 @@ MODEL_NAME = os.environ.get("MODEL_NAME", "gpt-3.5-turbo")
 
 client = OpenAI(base_url=API_BASE_URL, api_key=API_KEY)
 
+def call_llm(prompt: str) -> str:
     try:
         response = client.chat.completions.create(
             model=MODEL_NAME,
