@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Optional, Dict, Any
+from typing import Dict, Any, List
 
 class Observation(BaseModel):
     task_id: str
@@ -15,6 +15,6 @@ class Action(BaseModel):
 
 class StepResult(BaseModel):
     observation: Observation
-    reward: float  # 0.0 to 1.0
+    reward: float
     done: bool
     info: Dict[str, Any]
