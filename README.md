@@ -1,26 +1,16 @@
-\# My OpenEnv Environment
+---
+title: "My OpenEnv Environment"
+emoji: ??
+colorFrom: purple
+colorTo: gray
+sdk: docker
+app_port: 7860
+---
 
+# My OpenEnv Environment
 
+This Space provides an OpenAI-compatible environment for evaluating LLM agents.
 
-This environment is designed for evaluating LLM agents on \[easy/medium/hard] tasks.
-
-
-
-\## Structure
-
-\- `src/` – Core environment logic, graders, and models
-
-\- `inference.py` – Agent inference script and server entry point
-
-\- `Dockerfile` – Container setup for deployment
-
-
-
-\## Usage
-
-```bash
-
-pip install -r requirements.txt
-
-python inference.py
-
+## API Endpoints
+- POST `/reset` - Reset environment with a task
+- POST `/step`  - Execute an action
