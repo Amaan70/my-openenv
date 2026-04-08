@@ -1,6 +1,6 @@
 name: my-environment
 version: "0.1.0"
-entrypoint: openenv-server
+entrypoint: server
 description: "My OpenEnv environment"
 author: Amaan70
 license: MIT
