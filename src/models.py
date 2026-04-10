@@ -10,8 +10,8 @@ class Observation(BaseModel):
     max_steps: int
 
 class Action(BaseModel):
-    action_type: str
-    parameters: Dict[str, Any]
+    action_type: str   # "submit_code"
+    parameters: Dict[str, Any]  # {"code": "def solution()..."}
 
 class StepResult(BaseModel):
     observation: Observation
